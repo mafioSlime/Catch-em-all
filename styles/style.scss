@@ -6,14 +6,11 @@
 
 body {
   background-color: crimson;
-
 }
 
 main {
   animation: fade-in 2s ease;
 }
-
-
 
 .title-container {
   display: flex;
@@ -30,13 +27,11 @@ main {
   justify-content: center;
   font-size: 1.8rem;
 
-
   h1 {
     text-shadow: 2px 2px royalblue;
     color: fff;
     padding: 0.5rem;
     letter-spacing: 1px;
-
   }
 
   p {
@@ -44,19 +39,21 @@ main {
   }
 }
 
-.button button {
-  cursor: pointer;
-  text-align: center;
-  background-color: royalblue;
-  color: #fff;
-  padding: 15px 52px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-
+.button {
+  button {
+    cursor: pointer;
+    text-align: center;
+    background-color: royalblue;
+    color: #fff;
+    padding: 15px 52px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+  }
 }
 
 .pokedex-container {
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,7 +77,6 @@ main {
   margin: 10px;
   box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
   cursor: pointer;
-
 
   &:hover {
     animation: bounce 0.2s ease-in;
@@ -115,25 +111,21 @@ main {
   flex-direction: column;
   justify-content: space-between;
   margin-top: 2rem;
-
-
 }
 
 @keyframes bounce {
   0% {
-    transform: translateY(0)
+    transform: translateY(0);
   }
 
   50% {
-    transform: translateY(-20px)
+    transform: translateY(-20px);
   }
 
   100% {
-    transform: translateY(0)
+    transform: translateY(0);
   }
 }
-
-
 
 @keyframes fade-in {
   from {
@@ -145,7 +137,6 @@ main {
   }
 }
 
-
 .rotate {
   position: absolute;
   top: 50%;
@@ -153,9 +144,7 @@ main {
   text-align: center;
   animation: rotate 0.3s ease-in infinite;
   width: 50px;
-
 }
-
 
 @keyframes rotate {
   from {
