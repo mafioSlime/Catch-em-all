@@ -31,6 +31,10 @@ body {
   letter-spacing: 1px;
 }
 
+.title-container p {
+  color: #fff;
+}
+
 .pokedex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,6 +83,16 @@ body {
           animation: bounce 0.2s ease-in;
 }
 
+.pokemon .pokemon-id {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  width: 30%;
+  margin: auto;
+}
+
 .pokemon .pokemonImage {
   width: 120px;
   height: 120px;
@@ -104,10 +118,6 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 2rem;
-}
-
-.info span {
-  display: block;
 }
 
 @-webkit-keyframes bounce {
@@ -137,6 +147,24 @@ body {
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */

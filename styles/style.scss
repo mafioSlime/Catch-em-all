@@ -6,6 +6,7 @@
 
 body {
   background-color: crimson;
+
 }
 
 
@@ -23,6 +24,10 @@ body {
     padding: 0.5rem;
     letter-spacing: 1px;
 
+  }
+
+  p {
+    color: #fff;
   }
 }
 
@@ -55,6 +60,16 @@ body {
     animation: bounce 0.2s ease-in;
   }
 
+  .pokemon-id {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    width: 30%;
+    margin: auto;
+  }
+
   .pokemonImage {
     width: 120px;
     height: 120px;
@@ -75,9 +90,7 @@ body {
   justify-content: space-between;
   margin-top: 2rem;
 
-  span {
-    display: block;
-  }
+
 }
 
 @keyframes bounce {
@@ -91,5 +104,15 @@ body {
 
   100% {
     transform: translateY(0)
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
