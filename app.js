@@ -16,9 +16,11 @@ const colors = {
 };
 
 const pokedex_container = document.getElementById("pokedex-content");
-let pokemon_number = 150;
+const pokemon_number = 150;
+const random = Math.floor(Math.random() * 20 + 1);
 const main_types = Object.keys(colors);
 const body = document.getElementsByTagName("body");
+const btn = document.querySelector(".button");
 
 // FOR THE URL'S ITERATION
 
@@ -31,9 +33,12 @@ const fetchPokemon = async () => {
 // TO FETCH API
 
 const catchPokemon = async id => {
-  const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
+  let url = `https://pokeapi.co/api/v2/pokemon/${id}`;
   const res = await fetch(url);
   const pokemon = await res.json();
+  btn.addEventListener("click", e => {
+    console.log("Pokemon!");
+  });
   generatePokemon(pokemon);
 };
 
@@ -67,5 +72,12 @@ const generatePokemon = pokemon => {
   pokemonElement.innerHTML = html;
   pokedex_container.appendChild(pokemonElement);
 };
+
+//LOADING
+
+const rotate = document.querySelector(".rotate");
+setTimeout(() => {
+  rotate.remove();
+}, 1500);
 
 fetchPokemon();

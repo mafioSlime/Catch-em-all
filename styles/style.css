@@ -9,7 +9,26 @@ body {
   background-color: crimson;
 }
 
+main {
+  -webkit-animation: fade-in 2s ease;
+          animation: fade-in 2s ease;
+}
+
 .title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.title-content {
   text-align: center;
   height: 15vh;
   display: -webkit-box;
@@ -21,18 +40,29 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
-.title-container h1 {
+.title-content h1 {
   text-shadow: 2px 2px royalblue;
   color: fff;
   padding: 0.5rem;
   letter-spacing: 1px;
 }
 
-.title-container p {
+.title-content p {
   color: #fff;
+}
+
+.button button {
+  cursor: pointer;
+  text-align: center;
+  background-color: royalblue;
+  color: #fff;
+  padding: 15px 52px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
 }
 
 .pokedex-container {
@@ -165,6 +195,38 @@ body {
   }
   to {
     opacity: 1;
+  }
+}
+
+.rotate {
+  position: absolute;
+  top: 50%;
+  right: 49%;
+  text-align: center;
+  -webkit-animation: rotate 0.3s ease-in infinite;
+          animation: rotate 0.3s ease-in infinite;
+  width: 50px;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
   }
 }
 /*# sourceMappingURL=style.css.map */

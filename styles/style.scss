@@ -9,14 +9,27 @@ body {
 
 }
 
+main {
+  animation: fade-in 2s ease;
+}
+
+
 
 .title-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.title-content {
   text-align: center;
   height: 15vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
+
 
   h1 {
     text-shadow: 2px 2px royalblue;
@@ -29,6 +42,18 @@ body {
   p {
     color: #fff;
   }
+}
+
+.button button {
+  cursor: pointer;
+  text-align: center;
+  background-color: royalblue;
+  color: #fff;
+  padding: 15px 52px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+
 }
 
 .pokedex-container {
@@ -55,6 +80,7 @@ body {
   margin: 10px;
   box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
   cursor: pointer;
+
 
   &:hover {
     animation: bounce 0.2s ease-in;
@@ -107,6 +133,8 @@ body {
   }
 }
 
+
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -114,5 +142,27 @@ body {
 
   to {
     opacity: 1;
+  }
+}
+
+
+.rotate {
+  position: absolute;
+  top: 50%;
+  right: 49%;
+  text-align: center;
+  animation: rotate 0.3s ease-in infinite;
+  width: 50px;
+
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
   }
 }
