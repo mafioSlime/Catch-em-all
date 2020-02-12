@@ -1,0 +1,201 @@
+svg {
+  width: 200px;
+  height: 200px;
+}
+
+#tail {
+  -webkit-animation: tail2 0.5s ease-in alternate infinite;
+          animation: tail2 0.5s ease-in alternate infinite;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+#head {
+  -webkit-animation: head 1s linear alternate infinite;
+          animation: head 1s linear alternate infinite;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+#scarf {
+  -webkit-animation: scarf 1s linear alternate infinite;
+          animation: scarf 1s linear alternate infinite;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+#whole-eevee {
+  -webkit-animation: bounce 0.5s linear alternate infinite;
+          animation: bounce 0.5s linear alternate infinite;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+#real-front-feet {
+  -webkit-animation: front-feet 1s linear alternate infinite;
+          animation: front-feet 1s linear alternate infinite;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+#feet-behind {
+  -webkit-animation: feet-behind 1s linear alternate infinite;
+          animation: feet-behind 1s linear alternate infinite;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+@-webkit-keyframes feet-behind {
+  from {
+    -webkit-transform: skewY(5deg);
+            transform: skewY(5deg);
+  }
+  to {
+    -webkit-transform: skew(2deg);
+            transform: skew(2deg);
+  }
+}
+
+@keyframes feet-behind {
+  from {
+    -webkit-transform: skewY(5deg);
+            transform: skewY(5deg);
+  }
+  to {
+    -webkit-transform: skew(2deg);
+            transform: skew(2deg);
+  }
+}
+
+@-webkit-keyframes front-feet {
+  from {
+    -webkit-transform: skew(-2deg);
+            transform: skew(-2deg);
+  }
+  to {
+    -webkit-transform: skew(1deg);
+            transform: skew(1deg);
+  }
+}
+
+@keyframes front-feet {
+  from {
+    -webkit-transform: skew(-2deg);
+            transform: skew(-2deg);
+  }
+  to {
+    -webkit-transform: skew(1deg);
+            transform: skew(1deg);
+  }
+}
+
+@-webkit-keyframes scarf {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(-1deg);
+            transform: rotateZ(-1deg);
+  }
+}
+
+@keyframes scarf {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(-1deg);
+            transform: rotateZ(-1deg);
+  }
+}
+
+@-webkit-keyframes head {
+  from {
+    -webkit-transform: rotateZ(1deg);
+            transform: rotateZ(1deg);
+  }
+  to {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+}
+
+@keyframes head {
+  from {
+    -webkit-transform: rotateZ(1deg);
+            transform: rotateZ(1deg);
+  }
+  to {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+}
+
+@-webkit-keyframes run {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+}
+
+@keyframes run {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+}
+
+@-webkit-keyframes bounce {
+  from {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  to {
+    -webkit-transform: rotateX(25deg);
+            transform: rotateX(25deg);
+  }
+}
+
+@keyframes bounce {
+  from {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  to {
+    -webkit-transform: rotateX(25deg);
+            transform: rotateX(25deg);
+  }
+}
+
+@-webkit-keyframes tail2 {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(1deg);
+            transform: rotateZ(1deg);
+  }
+}
+
+@keyframes tail2 {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(1deg);
+            transform: rotateZ(1deg);
+  }
+}
+/*# sourceMappingURL=animation.css.map */

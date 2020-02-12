@@ -1,0 +1,107 @@
+svg {
+  width: 200px;
+  height: 200px;
+}
+
+#tail {
+  animation: tail2 0.5s ease-in alternate infinite;
+  transform-origin: bottom;
+}
+
+#head {
+  animation: head 1s linear alternate infinite;
+  transform-origin: bottom;
+}
+
+#scarf {
+  animation: scarf 1s linear alternate infinite;
+  transform-origin: bottom;
+}
+
+#whole-eevee {
+  animation: bounce 0.5s linear alternate infinite;
+  transform-origin: bottom;
+}
+
+#real-front-feet {
+  animation: front-feet 1s linear alternate infinite;
+  transform-origin: bottom;
+}
+
+#feet-behind {
+  animation: feet-behind 1s linear alternate infinite;
+  transform-origin: bottom;
+}
+
+
+
+
+@keyframes feet-behind {
+  from {
+    transform: skewY(5deg);
+  }
+
+  to {
+    transform: skew(2deg);
+  }
+}
+
+@keyframes front-feet {
+  from {
+    transform: skew(-2deg);
+  }
+
+  to {
+    transform: skew(1deg);
+  }
+}
+
+@keyframes scarf {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(-1deg);
+  }
+}
+
+@keyframes head {
+  from {
+    transform: rotateZ(1deg);
+  }
+
+  to {
+    transform: rotateZ(0deg);
+  }
+}
+
+@keyframes run {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(50%);
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: rotateX(0deg);
+  }
+
+  to {
+    transform: rotateX(25deg);
+  }
+}
+
+@keyframes tail2 {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(1deg);
+  }
+}

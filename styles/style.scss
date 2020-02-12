@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: crimson;
+  background-color: #fff;
 }
 
 main {
@@ -14,14 +14,13 @@ main {
 
 .title-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
 .title-content {
   text-align: center;
-  height: 15vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,7 +78,7 @@ main {
   cursor: pointer;
 
   &:hover {
-    animation: bounce 0.2s ease-in;
+    animation: pounce 0.2s ease-in;
   }
 
   .pokemon-id {
@@ -103,7 +102,6 @@ main {
 .pokemonImage img {
   max-width: 90%;
   margin-top: 20px;
-
 }
 
 .rotate {
@@ -115,7 +113,6 @@ main {
   width: 50px;
 }
 
-
 .info {
   display: flex;
   flex-direction: column;
@@ -125,7 +122,6 @@ main {
 
 // INDIVIDUAL POKEMON
 .popup {
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -155,11 +151,10 @@ main {
     background: none;
     border: none;
     cursor: pointer;
-
   }
 }
 
-@keyframes bounce {
+@keyframes pounce {
   0% {
     transform: translateZ(0);
   }

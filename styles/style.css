@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: crimson;
+  background-color: #fff;
 }
 
 main {
@@ -18,9 +18,9 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -30,7 +30,6 @@ main {
 
 .title-content {
   text-align: center;
-  height: 15vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,8 +109,8 @@ main {
 }
 
 .pokemon:hover {
-  -webkit-animation: bounce 0.2s ease-in;
-          animation: bounce 0.2s ease-in;
+  -webkit-animation: pounce 0.2s ease-in;
+          animation: pounce 0.2s ease-in;
 }
 
 .pokemon .pokemon-id {
@@ -202,7 +201,7 @@ main {
   cursor: pointer;
 }
 
-@-webkit-keyframes bounce {
+@-webkit-keyframes pounce {
   0% {
     -webkit-transform: translateZ(0);
             transform: translateZ(0);
@@ -217,7 +216,7 @@ main {
   }
 }
 
-@keyframes bounce {
+@keyframes pounce {
   0% {
     -webkit-transform: translateZ(0);
             transform: translateZ(0);
