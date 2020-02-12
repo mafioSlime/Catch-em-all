@@ -134,7 +134,16 @@ main {
 .pokemonImage img {
   max-width: 90%;
   margin-top: 20px;
-  border-radius: 4px solid tomato;
+}
+
+.rotate {
+  position: absolute;
+  top: 50%;
+  right: 49%;
+  text-align: center;
+  -webkit-animation: rotate 0.3s ease-in infinite;
+          animation: rotate 0.3s ease-in infinite;
+  width: 50px;
 }
 
 .info {
@@ -151,10 +160,52 @@ main {
   margin-top: 2rem;
 }
 
+.popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+  text-align: center;
+}
+
+.popup .info {
+  font-size: 2rem;
+  line-height: 3rem;
+  padding: 0.1rem;
+}
+
+.popup img {
+  width: 40%;
+}
+
+.popup button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 @-webkit-keyframes bounce {
   0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
   }
   50% {
     -webkit-transform: translateY(-20px);
@@ -168,8 +219,8 @@ main {
 
 @keyframes bounce {
   0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
   }
   50% {
     -webkit-transform: translateY(-20px);
@@ -197,16 +248,6 @@ main {
   to {
     opacity: 1;
   }
-}
-
-.rotate {
-  position: absolute;
-  top: 50%;
-  right: 49%;
-  text-align: center;
-  -webkit-animation: rotate 0.3s ease-in infinite;
-          animation: rotate 0.3s ease-in infinite;
-  width: 50px;
 }
 
 @-webkit-keyframes rotate {

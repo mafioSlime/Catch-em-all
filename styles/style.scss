@@ -103,14 +103,60 @@ main {
 .pokemonImage img {
   max-width: 90%;
   margin-top: 20px;
-  border-radius: 4px solid tomato;
+
 }
+
+.rotate {
+  position: absolute;
+  top: 50%;
+  right: 49%;
+  text-align: center;
+  animation: rotate 0.3s ease-in infinite;
+  width: 50px;
+}
+
 
 .info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-top: 2rem;
+}
+
+// INDIVIDUAL POKEMON
+.popup {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+  text-align: center;
+
+  .info {
+    font-size: 2rem;
+    line-height: 3rem;
+    padding: 0.1rem;
+  }
+
+  img {
+    width: 40%;
+  }
+
+  button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+  }
 }
 
 @keyframes bounce {
@@ -135,15 +181,6 @@ main {
   to {
     opacity: 1;
   }
-}
-
-.rotate {
-  position: absolute;
-  top: 50%;
-  right: 49%;
-  text-align: center;
-  animation: rotate 0.3s ease-in infinite;
-  width: 50px;
 }
 
 @keyframes rotate {
