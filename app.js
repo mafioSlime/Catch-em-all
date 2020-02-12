@@ -22,6 +22,10 @@ const main_types = Object.keys(colors);
 const body = document.getElementsByTagName("body");
 const btn = document.querySelector(".button");
 
+// btn.addEventListener("click", () => {
+
+// });
+
 // FOR THE URL'S ITERATION
 
 const fetchPokemon = async () => {
@@ -36,9 +40,6 @@ const catchPokemon = async id => {
   let url = `https://pokeapi.co/api/v2/pokemon/${id}`;
   const res = await fetch(url);
   const pokemon = await res.json();
-  btn.addEventListener("click", e => {
-    console.log("Pokemon!");
-  });
   generatePokemon(pokemon);
 };
 
