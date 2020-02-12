@@ -1,3 +1,5 @@
+// BACKGROUND COLOR FOR MAIN TYPES OF POKEMON
+
 const colors = {
   fire: "#f20048",
   grass: "#DEFDE0",
@@ -15,8 +17,10 @@ const colors = {
   normal: "#F5F5F5"
 };
 
+// GLOBAL DOM
+
 const pokedex_container = document.getElementById("pokedex-content");
-const pokemon_number = 251;
+const pokemon_number = 150;
 const main_types = Object.keys(colors);
 
 // FOR THE URL'S ITERATION
@@ -41,19 +45,21 @@ const catchPokemon = async id => {
 const generatePokemon = pokemon => {
   const pokemonElement = document.createElement("div");
   pokemonElement.classList.add("pokemon");
+
+  // TO GRAB POKEMON'S TYPE
   const pokemon_types = pokemon.types.map(element => element.type.name);
   const type = main_types.find(type => pokemon_types.indexOf(type) > -1);
 
+  // TO CAPITALIZE THE FIRST LETTER OF POKEMON
   const name = pokemon.name[0].toUpperCase() + pokemon.name.slice(1);
   const color = colors[type];
-
   pokemonElement.style.backgroundColor = color;
+
+
   const html = `
 
     <div class="pokemonImage" onclick="selectPokemon(${pokemon.id})">
-    <img src = "https://pokeres.bastionbot.org/images/pokemon/${
-      pokemon.id
-    }.png" />
+    <img src = "https://pokeres.bastionbot.org/images/pokemon/${pokemon.id}.png"/>
     </div>
 
     <div class="info" onclick="selectPokemon(${pokemon.id})">
@@ -84,9 +90,7 @@ const displayIndividual = pokemon => {
   <div class="popup" style="background-color:${color}">
     <button class="close" onclick="closePopup()"><i class="fas fa-times fa-2x"></i></button>
     <div class="pokemonImage">
-    <img src = "https://pokeres.bastionbot.org/images/pokemon/${
-      pokemon.id
-    }.png" />
+    <img src = "https://pokeres.bastionbot.org/images/pokemon/${pokemon.id}.png"/>
     </div>
 
     <div class="info">
@@ -108,6 +112,7 @@ const closePopup = () => {
   const popup = document.querySelector(".popup");
   popup.parentElement.removeChild(popup);
 };
+
 //LOADING
 
 const rotate = document.querySelector(".rotate");

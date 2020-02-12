@@ -10,8 +10,8 @@ body {
 }
 
 main {
-  -webkit-animation: fade-in 2s ease;
-          animation: fade-in 2s ease;
+  -webkit-animation: fade-in 1s ease;
+          animation: fade-in 1s ease;
 }
 
 .title-container {
