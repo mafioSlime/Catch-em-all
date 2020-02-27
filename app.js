@@ -20,7 +20,7 @@ const colors = {
 // GLOBAL DOM
 
 const pokedex_container = document.getElementById("pokedex-content");
-const pokemon_number = 150;
+const pokemon_number = 900;
 const main_types = Object.keys(colors);
 
 // FOR THE URL'S ITERATION
